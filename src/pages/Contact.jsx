@@ -75,8 +75,7 @@ export default function Contact() {
            {/* Email */}
            <div>
              <Field
-               name="email"
-               type="email"
+               name="email" 
                placeholder="Email"
                className="w-full p-2 placeholder-gray-500 rounded border-2 border-gray-400 dark:bg-gray-800 dark:text-white dark:border-red-400"
              />
