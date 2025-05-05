@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Home() {
   return (
     <section className="min-h-screen bg-[#fef3c7] dark:bg-black text-gray-900 dark:text-red-100 transition-colors duration-300 px-4 pt-12 pb-8">
@@ -16,12 +18,13 @@ export default function Home() {
         </p>
 
         {/* CTA Button */}
-        <a
-          href="/contact"
-          className="inline-block bg-blue-500 hover:bg-blue-600 dark:bg-red-600 dark:hover:bg-red-700 text-white font-semibold py-2 px-5 rounded-md shadow-sm transition-colors"
-        >
-          Contact Us
-        </a>
+        <Link
+  to="/contact"
+  className="inline-block bg-blue-500 hover:bg-blue-600 dark:bg-red-600 dark:hover:bg-red-700 text-white font-semibold py-2 px-5 rounded-md shadow-sm transition-colors"
+>
+  Contact Us
+</Link>
+
       </div>
     </section>
   );
